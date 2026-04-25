@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheWheyStore | Suplementos de Élite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-neutral-950 text-white font-sans selection:bg-neutral-800 pb-24 overflow-x-hidden relative">
+
+    <div class="bg-white text-black text-xs font-bold text-center py-2 uppercase tracking-widest">
+        🚀 Envíos a todo el país | Asesoramiento personalizado
+    </div>
+
+    <header class="border-b border-neutral-800 bg-neutral-950/90 sticky top-0 z-40 backdrop-blur-md">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://i.postimg.cc/Y0HqFTC2/628444401-18410379355120668-1764068424766631833-n.jpg" alt="Logo" class="w-12 h-12 rounded-full border border-neutral-800">
+                <h1 class="text-xl font-black tracking-tighter uppercase hidden sm:block">TheWheyStore</h1>
+            </div>
+            
+            <button onclick="toggleCarrito()" class="text-sm font-bold border border-neutral-800 bg-neutral-900 px-4 py-2 flex items-center gap-2 hover:bg-neutral-800 transition-colors cursor-pointer">
+                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                <span id="cart-count">0</span> | $<span id="cart-total">0</span>
+            </button>
+        </div>
+    </header>
+
+    <section class="relative py-24 px-6 text-center border-b border-neutral-900 bg-gradient-to-b from-neutral-900 to-neutral-950">
+        <div class="max-w-3xl mx-auto">
+            <div class="inline-block text-xs font-bold bg-neutral-800 text-neutral-300 px-3 py-1 rounded-full mb-6 uppercase tracking-widest border border-neutral-700">
+                Llevá tu cuerpo al límite
+            </div>
+            <h2 class="text-5xl md:text-7xl font-black uppercase tracking-tighter mb-6 leading-tight">
+                Rendimiento <br> <span class="text-neutral-500">Sin Excusas.</span>
+            </h2>
+            <p class="text-neutral-400 text-lg mb-10 max-w-xl mx-auto">
+                Suplementación deportiva premium para quienes se toman el entrenamiento en serio.
+            </p>
+            <a href="#catalogo" class="inline-block bg-white text-black font-black uppercase tracking-widest px-8 py-4 hover:bg-neutral-300 transition-colors">
+                Ver Catálogo
+            </a>
+        </div>
+    </section>
+
+    <section class="max-w-7xl mx-auto px-6 py-12 border-b border-neutral-900">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-neutral-800">
+            <div class="p-4">
+                <div class="text-3xl mb-3">🚚</div>
+                <h4 class="font-bold uppercase text-sm mb-2">Envíos Seguros</h4>
+                <p class="text-neutral-500 text-sm">Despachamos a todo el país en el día.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-3xl mb-3">🛡️</div>
+                <h4 class="font-bold uppercase text-sm mb-2">Calidad Premium</h4>
+                <p class="text-neutral-500 text-sm">Productos 100% originales y sellados.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-3xl mb-3">💬</div>
+                <h4 class="font-bold uppercase text-sm mb-2">Asesoramiento</h4>
+                <p class="text-neutral-500 text-sm">Te ayudamos a elegir lo que necesitás.</p>
+            </div>
+        </div>
+    </section>
+
+    <main id="catalogo" class="max-w-7xl mx-auto px-6 py-20">
+        <h3 class="text-3xl font-black uppercase tracking-wide mb-12">Nuestros Productos</h3>
+        
+        <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            </div>
+    </main>
+
+    <section class="bg-neutral-900 py-20 border-t border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <h3 class="text-2xl font-black uppercase tracking-wide text-center mb-12">La comunidad habla</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-neutral-950 border border-neutral-800 p-6">
+                    <div class="flex text-yellow-500 mb-3">★★★★★</div>
+                    <p class="text-neutral-400 italic text-sm mb-4">"Excelente atención. Me asesoraron con la prote ideal y llegó en el día."</p>
+                    <p class="font-bold text-sm uppercase">— Matías R.</p>
+                </div>
+                <div class="bg-neutral-950 border border-neutral-800 p-6">
+                    <div class="flex text-yellow-500 mb-3">★★★★★</div>
+                    <p class="text-neutral-400 italic text-sm mb-4">"Compro acá siempre. Precios imbatibles y siempre tienen stock."</p>
+                    <p class="font-bold text-sm uppercase">— Julieta C.</p>
+                </div>
+                <div class="bg-neutral-950 border border-neutral-800 p-6">
+                    <div class="flex text-yellow-500 mb-3">★★★★★</div>
+                    <p class="text-neutral-400 italic text-sm mb-4">"La Whey Burner es increíble, me dio resultados súper rápido."</p>
+                    <p class="font-bold text-sm uppercase">— Lucas M.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-neutral-950 border-t border-neutral-900 pt-16 pb-8 text-sm text-neutral-500">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div>
+                <img src="https://i.postimg.cc/Y0HqFTC2/628444401-18410379355120668-1764068424766631833-n.jpg" alt="Logo" class="w-16 h-16 rounded-full border border-neutral-800 mb-4">
+                <p class="max-w-xs">Suplementación deportiva de máxima pureza.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase mb-4">Contacto</h4>
+                <p class="mb-2">📧 thewheystore@hotmail.com</p>
+                <p class="mb-2">📞 11-5565-8064</p>
+                <p>🕒 Lun a Sáb: 10 a 17hs</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold uppercase mb-4">Legal</h4>
+                <ul>
+                    <li class="mb-2"><a href="#" class="hover:text-white transition-colors">Términos y Condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="text-center border-t border-neutral-900 pt-8 flex flex-col items-center">
+            <p>TheWheyStore © 2026.</p>
+            <p class="mt-2 text-xs uppercase tracking-widest text-neutral-600">Pagina Demostrativa no apta para vender, desarrollado por Vidmar & Guerrero</p>
+        </div>
+    </footer>
+
+    <div id="product-modal" class="hidden fixed inset-0 z-[60] bg-black/90 flex items-center justify-center p-4 backdrop-blur-sm">
+        <div class="bg-neutral-900 border border-neutral-700 w-full max-w-3xl flex flex-col md:flex-row overflow-hidden relative">
+            <button onclick="cerrarModal()" class="absolute top-4 right-4 text-neutral-400 hover:text-white z-10 bg-neutral-900 p-1 rounded-full">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            
+            <div class="w-full md:w-1/2 bg-neutral-950 p-8 flex items-center justify-center relative overflow-hidden group cursor-crosshair">
+                <img id="modal-img" src="" alt="Producto" class="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-150">
+            </div>
+            
+            <div class="w-full md:w-1/2 p-8 flex flex-col justify-center">
+                <div id="modal-category" class="text-xs text-neutral-500 uppercase tracking-widest mb-2"></div>
+                <h3 id="modal-title" class="text-3xl font-black leading-tight mb-4 uppercase"></h3>
+                <p id="modal-desc" class="text-neutral-400 text-sm mb-6"></p>
+                <div class="text-3xl font-black mb-8">$<span id="modal-price"></span></div>
+                
+                <button id="modal-add-btn" class="w-full bg-white text-black font-black uppercase px-8 py-4 hover:bg-neutral-300 transition-colors">
+                    Agregar al Carrito
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="cart-drawer-overlay" onclick="toggleCarrito()" class="hidden fixed inset-0 bg-black/50 z-[70] backdrop-blur-sm transition-opacity"></div>
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-96 bg-neutral-950 border-l border-neutral-800 z-[80] transform translate-x-full transition-transform duration-300 flex flex-col shadow-2xl">
+        <div class="p-6 border-b border-neutral-800 flex justify-between items-center bg-neutral-900">
+            <h3 class="font-black uppercase text-xl">Tu Carrito</h3>
+            <button onclick="toggleCarrito()" class="text-neutral-400 hover:text-white">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+        </div>
+        
+        <div id="cart-items-list" class="flex-1 overflow-y-auto p-6">
+            <p class="text-neutral-500 text-center mt-10">Tu carrito está vacío.</p>
+        </div>
+        
+        <div class="p-6 border-t border-neutral-800 bg-neutral-900">
+            <div class="flex justify-between items-center mb-4">
+                <span class="text-neutral-400 uppercase text-sm font-bold">Total:</span>
+                <span class="font-black text-2xl">$<span id="drawer-total">0</span></span>
+            </div>
+            <button onclick="enviarWhatsApp()" class="w-full bg-green-500 hover:bg-green-600 text-white font-black uppercase px-8 py-4 transition-colors flex justify-center items-center gap-2">
+                Comprar por WhatsApp
+            </button>
+        </div>
+    </div>
+
+    <div id="checkout-bar" class="hidden fixed bottom-0 left-0 w-full bg-white text-black p-4 border-t border-neutral-200 flex-col md:flex-row justify-between items-center z-30 px-6 shadow-2xl">
+        <div class="mb-2 md:mb-0">
+            <span class="font-black text-xl uppercase tracking-tight">Total: $<span id="checkout-total">0</span></span>
+        </div>
+        <button onclick="toggleCarrito()" class="w-full md:w-auto bg-neutral-950 hover:bg-neutral-800 text-white font-black uppercase px-8 py-3 transition-colors flex justify-center items-center gap-2">
+            Ver Carrito
+        </button>
+    </div>
+
+    <script>
+        // BASE DE DATOS DE PRODUCTOS (Actualizada con descripciones y nuevos productos)
+        const productos = [
+            { id: 1, name: "Platinum Whey Protein 2 Lb", category: "Proteínas", price: 70000, img: "https://i.postimg.cc/dt9pwgMd/PWP-2Lb-Strawberry.webp", desc: "Fórmula de máxima pureza para una recuperación muscular superior. Sabor increíble y rápida absorción." },
+            { id: 2, name: "100% Whey Protein", category: "Proteínas", price: 62000, img: "https://i.postimg.cc/zGcdfrxZ/100-W-FR.webp", desc: "Proteína de suero de leche concentrada. El estándar de oro para complementar tu dieta todos los días." },
+            { id: 3, name: "Whey Protein Burner", category: "Proteínas", price: 67000, img: "https://i.postimg.cc/yxsjGY8b/whey-protein-burner-35.webp", desc: "Proteína con agentes termogénicos. Te ayuda a mantener la masa muscular mientras favorece la pérdida de grasa." },
+            { id: 4, name: "Mervick Lab Real Blend 930g", category: "Proteínas", price: 62000, img: "https://i.postimg.cc/SxB9gmrg/D-NQ-NP-2X-690753-MLA99542526718-122025-F-removebg-preview.png", desc: "Mezcla de proteínas de alto valor biológico sabor Vainilla. Ideal para tomar post-entreno o como colación." },
+            { id: 5, name: "Barra Proteica Iron Bar Choco", category: "Snacks", price: 2400, img: "https://i.postimg.cc/wTJR3CHw/161035-suplemento-dietario-iron-bar-chocolate-x-46-gr-imagen-1-removebg-preview.png", desc: "Barra de 46g con excelente aporte proteico. El snack perfecto para saciar el hambre sin romper la dieta." },
+            { id: 6, name: "Whey Protein Nutremax 1KG", category: "Proteínas", price: 50000, img: "https://i.postimg.cc/ydgYtR82/proteina1-80be032ed6584ef17e16422617250774-1024-1024-removebg-preview.png", desc: "Proteína de excelente relación precio-calidad. Rinde al máximo tus entrenamientos con este clásico nacional." }
+        ];
+
+        let carrito = [];
+
+        // RENDERIZAR GRILLA
+        const grid = document.getElementById('product-grid');
+        productos.forEach(prod => {
+            const card = document.createElement('div');
+            card.className = "group bg-neutral-900 border border-neutral-800 p-4 flex flex-col transition-colors hover:border-neutral-500";
+            card.innerHTML = `
+                <div onclick="abrirModal(${prod.id})" class="cursor-pointer aspect-square bg-neutral-950 mb-4 overflow-hidden relative flex items-center justify-center p-4">
+                    <img src="${prod.img}" alt="${prod.name}" class="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                        <span class="text-white font-bold tracking-widest text-sm bg-neutral-900/80 px-4 py-2 uppercase border border-neutral-600">Ver Detalles</span>
+                    </div>
+                </div>
+                <div class="text-xs text-neutral-500 uppercase tracking-widest mb-1">${prod.category}</div>
+                <h4 onclick="abrirModal(${prod.id})" class="cursor-pointer font-bold text-lg mb-4 hover:text-neutral-300 transition-colors">${prod.name}</h4>
+                <div class="flex justify-between items-center mt-auto">
+                    <span class="text-xl font-black">$${prod.price.toLocaleString()}</span>
+                    <button onclick="agregarAlCarrito(${prod.id})" class="bg-white text-black text-xs font-bold uppercase px-4 py-2 hover:bg-neutral-300">
+                        Agregar
+                    </button>
+                </div>
+            `;
+            grid.appendChild(card);
+        });
+
+        // FUNCIONES DEL CARRITO
+        function agregarAlCarrito(id) {
+            const producto = productos.find(p => p.id === id);
+            carrito.push(producto);
+            actualizarInterfaz();
+            cerrarModal(); // Si se agregó desde el modal, lo cerramos
+        }
+
+        function actualizarInterfaz() {
+            const total = carrito.reduce((suma, item) => suma + item.price, 0);
+            
+            // Textos generales
+            document.getElementById('cart-count').innerText = carrito.length;
+            document.getElementById('cart-total').innerText = total.toLocaleString();
+            document.getElementById('checkout-total').innerText = total.toLocaleString();
+            document.getElementById('drawer-total').innerText = total.toLocaleString();
+
+            // Renderizar lista en el Drawer lateral
+            const cartList = document.getElementById('cart-items-list');
+            if (carrito.length === 0) {
+                cartList.innerHTML = '<p class="text-neutral-500 text-center mt-10">Tu carrito está vacío.</p>';
+            } else {
+                cartList.innerHTML = '';
+                carrito.forEach((item, index) => {
+                    cartList.innerHTML += `
+                        <div class="flex items-center gap-4 mb-4 pb-4 border-b border-neutral-800">
+                            <div class="w-16 h-16 bg-neutral-950 p-1 flex-shrink-0 border border-neutral-800">
+                                <img src="${item.img}" alt="${item.name}" class="w-full h-full object-contain">
+                            </div>
+                            <div class="flex-1">
+                                <h5 class="text-sm font-bold leading-tight mb-1">${item.name}</h5>
+                                <p class="text-neutral-400 font-bold text-sm">$${item.price.toLocaleString()}</p>
+                            </div>
+                        </div>
+                    `;
+                });
+            }
+
+            // Mostrar barra flotante abajo si hay cosas
+            const barra = document.getElementById('checkout-bar');
+            if (carrito.length > 0) {
+                barra.classList.remove('hidden');
+                barra.classList.add('flex');
+            } else {
+                barra.classList.add('hidden');
+                barra.classList.remove('flex');
+            }
+        }
+
+        // CONTROL DEL MODAL DE PRODUCTO (Zoom y Descripción)
+        function abrirModal(id) {
+            const prod = productos.find(p => p.id === id);
+            document.getElementById('modal-img').src = prod.img;
+            document.getElementById('modal-title').innerText = prod.name;
+            document.getElementById('modal-category').innerText = prod.category;
+            document.getElementById('modal-desc').innerText = prod.desc;
+            document.getElementById('modal-price').innerText = prod.price.toLocaleString();
+            
+            const btn = document.getElementById('modal-add-btn');
+            btn.onclick = () => agregarAlCarrito(prod.id);
+
+            const modal = document.getElementById('product-modal');
+            modal.classList.remove('hidden');
+        }
+
+        function cerrarModal() {
+            document.getElementById('product-modal').classList.add('hidden');
+        }
+
+        // CONTROL DEL DRAWER (Carrito Lateral)
+        function toggleCarrito() {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-drawer-overlay');
+            
+            if (drawer.classList.contains('translate-x-full')) {
+                // Abrir
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('hidden');
+                document.body.style.overflow = 'hidden'; // Evita scrollear el fondo
+            } else {
+                // Cerrar
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        }
+
+        // CHECKOUT POR WHATSAPP
+        function enviarWhatsApp() {
+            if (carrito.length === 0) {
+                alert("Tu carrito está vacío.");
+                return;
+            }
+            let mensaje = "Hola *TheWheyStore*, quiero realizar el siguiente pedido:%0A%0A";
+            carrito.forEach((item, index) => {
+                mensaje += `${index + 1}. ${item.name} - $${item.price.toLocaleString()}%0A`;
+            });
+            const total = carrito.reduce((suma, item) => suma + item.price, 0);
+            mensaje += `%0A*Total: $${total.toLocaleString()}*`;
+            window.open(`https://wa.me/5491155658064?text=${mensaje}`, "_blank");
+        }
+    </script>
+</body>
+</html>
